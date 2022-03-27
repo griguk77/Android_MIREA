@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">Моё первое приложение</string>
+    <string name="edit_message">Введите сообщение</string>
+    <string name="button_send">Отправить</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_search">Поиск</string>
+    <string name="title_activity_main">Главное явление</string>
+    <string name="title_activity_display_message">Моё Сообщение</string>
+    <string name="api_version_print">Версия API:</string>
+    <string name="pause">Пауза</string>
+    <string name="play">Играть</string>
+    <string name="stop">Стоп</string>
+</resources>
