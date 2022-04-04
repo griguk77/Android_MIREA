@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Моё приложение</string>
+    <string name="add">ДОБАВИТЬ ФРАГМЕНТ</string>
+    <string name="replace">ЗАМЕНИТЬ ФРАГМЕНТ</string>
+    <string name="delete">УДАЛИТЬ ФРАГМЕНТ</string>
+    <string name="fr1">ФРАГМЕНТ 1</string>
+    <string name="fr2">ФРАГМЕНТ 2</string>
+    <string name="added">Фрагмент добавлен</string>
+    <string name="replaced">Фрагмент заменён</string>
+    <string name="deleted">Фрагмент удалён</string>
+</resources>

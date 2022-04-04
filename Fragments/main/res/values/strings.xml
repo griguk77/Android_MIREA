@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application5</string>
+    <string name="add">ADD A FRAGMENT</string>
+    <string name="replace">REPLACE A FRAGMENT</string>
+    <string name="delete">DELETE A FRAGMENT</string>
+    <string name="fr1">FRAGMENT 1</string>
+    <string name="fr2">FRAGMENT 2</string>
+    <string name="added">Fragment is added</string>
+    <string name="replaced">Fragment is replaced</string>
+    <string name="deleted">Fragment is deleted</string>
+</resources>
