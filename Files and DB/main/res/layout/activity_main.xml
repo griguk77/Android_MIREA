@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="18sp"
+        android:gravity="start"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/save_text"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/save_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="saveText"
+        android:text="Сохранить"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/delete_file"
+        app:layout_constraintBottom_toTopOf="@id/editor"
+        app:layout_constraintTop_toTopOf="@id/text" />
+
+    <Button
+        android:id="@+id/delete_file"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="deleteFile"
+        android:text="Удалить файл"
+        app:layout_constraintLeft_toRightOf="@id/save_text"
+        app:layout_constraintRight_toLeftOf="@id/save_text_ex"
+        app:layout_constraintBottom_toTopOf="@id/editor"
+        app:layout_constraintTop_toTopOf="@id/text" />
+
+
+    <Button
+        android:id="@+id/save_text_ex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="saveExText"
+        android:text="Сохранить во внешнем"
+        app:layout_constraintLeft_toRightOf="@id/delete_file"
+        app:layout_constraintRight_toLeftOf="@id/open_text_ex"
+        app:layout_constraintBottom_toTopOf="@id/editor"
+        app:layout_constraintTop_toTopOf="@id/text" />
+
+    <Button
+        android:id="@+id/open_text_ex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="openExText"
+        android:text="Открыть из внешнего"
+        app:layout_constraintLeft_toRightOf="@id/save_text_ex"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editor"
+        app:layout_constraintTop_toTopOf="@id/text" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="start"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/open_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_text_ex" />
+
+    <Button
+        android:id="@+id/open_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openText"
+        android:text="Открыть"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/db"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <Button
+        android:id="@+id/db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="db"
+        android:text="База данных"
+        app:layout_constraintLeft_toRightOf="@id/open_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
